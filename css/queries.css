@@ -46,7 +46,7 @@
   .nav-links {
     display: flex;
     flex-direction: column;
-    margin: 9rem 0 0 4rem;
+    /* margin: 9rem 0 0 4rem; */
     position: relative;
   }
   .nav-open #wallet-btn {
