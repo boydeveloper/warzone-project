@@ -6,7 +6,9 @@
   .menu-btn {
     display: block;
   }
-
+  .logo {
+    margin: 0;
+  }
   .sub-nav {
     position: absolute;
     top: 0;
@@ -34,7 +36,6 @@
   }
   .nav-open .open-icon {
     display: none;
-    position: absolute;
   }
   .nav-open .close-icon {
     display: block;
@@ -48,11 +49,20 @@
   }
   .nav-open #wallet-btn {
     position: absolute;
-    top: 40%;
-    left: 17%;
+    top: 20%;
+    left: 15%;
   }
 
   .nav-link {
     margin-bottom: 6rem;
+  }
+}
+@media (max-width: 779px) {
+  .heading-subtext {
+    /* line-height: 2.4rem; */
+  }
+  .text-box {
+    padding-right: 0 3rem;
+    padding-left: 0 3rem;
   }
 }
