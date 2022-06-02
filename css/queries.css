@@ -1,0 +1,58 @@
+@media (max-width: 1135px) {
+  .navigation {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+  .sub-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    padding: 4rem;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 99;
+    width: 50%;
+    min-width: 20rem;
+    background-color: #000;
+    transform: translateX(100%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-open .sub-nav {
+    transform: translateX(0%);
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+  .nav-open .open-icon {
+    display: none;
+    position: absolute;
+  }
+  .nav-open .close-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    /* margin: 9rem 0 0 4rem; */
+    position: relative;
+  }
+  .nav-open #wallet-btn {
+    position: absolute;
+    top: 40%;
+    left: 17%;
+  }
+
+  .nav-link {
+    margin-bottom: 6rem;
+  }
+}
