@@ -1,13 +1,14 @@
 @media (max-width: 1135px) {
   .navigation {
     justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
   .menu-btn {
     display: block;
   }
   .logo {
-    margin: 0;
+    margin-right: 0;
   }
   .sub-nav {
     position: absolute;
@@ -49,7 +50,7 @@
   }
   .nav-open #wallet-btn {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 15%;
   }
 
@@ -59,10 +60,11 @@
 }
 @media (max-width: 779px) {
   .heading-subtext {
-    /* line-height: 2.4rem; */
+    line-height: 2.1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
   .text-box {
-    padding-right: 0 3rem;
-    padding-left: 0 3rem;
+    padding: 27rem 0;
   }
 }
