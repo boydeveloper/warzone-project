@@ -105,7 +105,7 @@ body {
 
 /* section hero */
 .section-hero {
-  max-height: 97rem;
+  height: 97rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, #000000 100%),
     url(../img/codm.jpg);
