@@ -37,13 +37,9 @@
     pointer-events: all;
     visibility: visible;
   }
-  /* .nav-open .open-icon {
-    display: none;
-  } */
-  /* .nav-open .close-icon {
+  .nav-open .menu-btn {
     display: block;
-  } */
-
+  }
   .nav-links {
     display: flex;
     flex-direction: column;

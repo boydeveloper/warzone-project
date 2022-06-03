@@ -22,6 +22,7 @@ body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .nav {
@@ -61,8 +62,7 @@ body {
   z-index: 9999;
   display: none;
 }
-.open-icon,
-.close-icon {
+.open-icon {
   font-size: 3.5rem;
 }
 .close-icon {
