@@ -14,21 +14,22 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
-    max-height: 100vh;
     display: flex;
-    padding: 4rem;
+    padding: 2rem;
     align-items: flex-start;
     flex-direction: column;
     z-index: 99;
-    width: 50%;
+    width: 100%;
     min-width: 20rem;
-    background-color: #000;
-    transform: translateX(100%);
+    background-color: rgb(36, 35, 35);
+    transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+  }
+  #wallet-btn {
+    margin: 0;
   }
   .nav-open .sub-nav {
     transform: translateX(0%);
@@ -36,23 +37,17 @@
     pointer-events: all;
     visibility: visible;
   }
-  .nav-open .open-icon {
+  /* .nav-open .open-icon {
     display: none;
-  }
-  .nav-open .close-icon {
+  } */
+  /* .nav-open .close-icon {
     display: block;
-  }
+  } */
 
   .nav-links {
     display: flex;
     flex-direction: column;
-    /* margin: 9rem 0 0 4rem; */
     position: relative;
-  }
-  .nav-open #wallet-btn {
-    position: absolute;
-    top: 50%;
-    left: 15%;
   }
 
   .nav-link {

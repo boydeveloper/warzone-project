@@ -113,14 +113,9 @@ body {
 /* section hero */
 .section-hero {
   width: 100%;
-  /* height: 100vh; */
-  max-height: 97rem;
-
-  /* overflow-y: scroll; */
-  /* overflow: ; */
+  height: 100%;
 }
 .text-img {
-  /* object-fit: cover; */
   margin-bottom: 1.5rem;
   max-width: 52.3rem;
   width: 100%;
@@ -138,7 +133,6 @@ body {
 .text-img-1 {
   width: 100%;
   margin-bottom: 1.5rem;
-  /* max-width: 61.2rem; */
 }
 .heading-primary {
   font-family: 'SF Pro Display';
@@ -205,21 +199,24 @@ span p {
   width: 100%;
   height: 100%;
   top: 0;
-  left: 0;
+  bottom: 0;
   display: none;
+  align-items: center;
+  justify-content: center;
 }
-.modal-boxes.open-modal {
-  display: block;
-}
+
 .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   background: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  z-index: -1;
+  z-index: 99;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 .modal {
   color: #fff;
@@ -229,6 +226,10 @@ span p {
   border: 0.1rem solid #484848;
   border-radius: 2rem;
   padding: 2.5rem 2.5rem 3.1rem 2.5rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 99999;
 }
 .modal-header {
